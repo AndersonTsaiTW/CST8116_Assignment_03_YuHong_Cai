@@ -15,7 +15,7 @@ public class Assignment03YuHongCai {
     // sample the rolls
     for (int count = 0; count < 1000; count++) {
       roll = (int) (Math.random() * 20) + 1;
-      diceRolls[roll] = diceRolls[roll - 1] + 1; // crashes
+      diceRolls[roll - 1] += 1; // fix bug
     }
     // run a report
     for (int index = 0; index < diceRolls.length; index++) {
